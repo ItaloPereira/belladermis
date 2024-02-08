@@ -1,0 +1,44 @@
+.icon-button {
+  display: inline-block;
+  border-radius: 50%;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+
+  svg {
+    display: block;
+  }
+}
+
+.icon-button--size-extra-large {
+  padding: 14px;
+  font-size: 34px;
+}
+
+.icon-button--variant-contained {
+  box-shadow: var(--button-default-shadow);
+
+  &:hover {
+    box-shadow: var(--button-hover-shadow);
+  }
+
+  &:focus-visible {
+    outline: var(--color-black) auto 1px;
+  }
+}
+
+.icon-button--color-whatsapp.icon-button--variant-contained {
+  background-color: var(--color-whatsapp-main);
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-whatsapp-dark);
+  }
+
+  &:focus-visible {
+    background-color: var(--color-whatsapp-dark);
+  }
+}
