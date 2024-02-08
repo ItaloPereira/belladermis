@@ -1,0 +1,17 @@
+@use './breakpoints';
+
+%h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+
+  @include breakpoints.mq(tabletLandscape) {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 1.1;
+  }
+}
+
+h1 {
+  @extend %h1;
+}
