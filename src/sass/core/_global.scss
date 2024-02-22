@@ -1,1 +1,10 @@
+@use './breakpoints';
+
 body {}
+
+.container {
+  margin-block: 0;
+  margin-inline: auto;
+  max-inline-size: var(--container-max-width);
+  padding-inline: var(--container-padding);
+}

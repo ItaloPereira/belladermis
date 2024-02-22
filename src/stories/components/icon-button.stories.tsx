@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { FaWhatsapp } from "react-icons/fa";
 
-import IconButton from "@/ui/components/icon-button";
+import IconButton from "@/react/components/icon-button";
 
 
 const meta = {

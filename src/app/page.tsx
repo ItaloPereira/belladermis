@@ -1,5 +1,5 @@
-import Button from "@/ui/components/button";
-import IconButton from "@/ui/components/icon-button";
+import Button from "@/react/components/button";
+import IconButton from "@/react/components/icon-button";
 
 import { FaWhatsapp } from "react-icons/fa";
 
