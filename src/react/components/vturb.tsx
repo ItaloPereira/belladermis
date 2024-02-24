@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Script from "next/script"
 
-import "@/sass/modules/_vturb.scss";
+import "@/sass/components/_vturb.scss";
 
 const Vturb = () => {
 

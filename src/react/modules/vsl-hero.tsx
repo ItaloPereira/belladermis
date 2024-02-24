@@ -1,10 +1,12 @@
 import Image from "next/image";
 
-import Vturb from "@/react/modules/vturb";
+import Button from "@/react/components/button";
+import Vturb from "@/react/components/vturb";
+import DelayWrapper from "@/react/components/delay-wrapper";
 
 import "@/sass/modules/_vsl-hero.scss";
 
-type VslHeroProps = {
+interface VslHeroProps {
 }
 
 const VslHero = (props: VslHeroProps) => {
@@ -29,6 +31,15 @@ const VslHero = (props: VslHeroProps) => {
         <div className="vsl-hero__video-wrapper">
           <Vturb />
         </div>
+
+        <DelayWrapper>
+          <div className="vsl-hero__button-wrapper">
+            <Button href="#" animated>
+              COMECE SUA JORNADA DE TRANSFORMAÇÃO
+            </Button>
+
+          </div>
+        </DelayWrapper>
       </div>
 
     </section>

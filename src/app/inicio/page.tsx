@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import VslHero from "@/react/modules/vsl-hero";
 
 export const metadata: Metadata = {
-  title: "O Segredo...",
-  description: "",
+  title: "AntiAcne Natural...",
+  description: "\"AntiAcne Natural\" que além de limpar, hidrata?",
 };
 
 const InicioPage = () => {

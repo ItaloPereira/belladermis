@@ -6,7 +6,7 @@ import type { ReactNode } from "react";
 import "@/sass/components/_button.scss";
 
 
-type ButtonProps = {
+interface ButtonProps {
   children: ReactNode;
   startIcon?: ReactNode;
   href: string;
