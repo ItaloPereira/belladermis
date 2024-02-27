@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import VslHero from "@/react/modules/vsl-hero";
+import Footer from "@/react/modules/footer";
 
 export const metadata: Metadata = {
   title: "AntiAcne Natural...",
@@ -11,6 +12,7 @@ const InicioPage = () => {
   return (
     <main>
       <VslHero />
+      <Footer />
     </main>
   );
 }

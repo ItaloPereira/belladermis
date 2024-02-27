@@ -1,6 +1,13 @@
 @use './breakpoints';
 
-body {}
+a {
+  color: var(--color-primary-main);
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 .container {
   margin-block: 0;

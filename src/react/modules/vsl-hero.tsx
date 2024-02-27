@@ -6,18 +6,12 @@ import DelayWrapper from "@/react/components/delay-wrapper";
 
 import "@/sass/modules/_vsl-hero.scss";
 
-interface VslHeroProps {
-}
-
-const VslHero = (props: VslHeroProps) => {
-  const {
-  } = props;
-
+const VslHero = () => {
   return (
     <section className="vsl-hero">
       <div className="container">
         <Image
-          src="/hero/bgr.jpg"
+          src="/images/hero/bgr.jpg"
           width={1129}
           height={775}
           alt="Flores"

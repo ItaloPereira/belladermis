@@ -1,0 +1,27 @@
+@use '../core/typography';
+
+.footer {
+  background: var(--color-black-800);
+  color: var(--color-white);
+  @extend %body-small;
+}
+
+.footer__bottom {
+  padding-block: 32px;
+  text-align: center;
+  display: grid;
+  row-gap: 24px;
+}
+
+.footer__logo {
+  margin: 0 auto;
+}
+
+.footer__legal {
+  display: flex;
+  justify-content: center;
+
+  a {
+    margin: 0 8px;
+  }
+}

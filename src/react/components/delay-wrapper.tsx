@@ -40,8 +40,6 @@ const DelayWrapper = ({ children }: DelayWrapperProps) => {
       }
 
       smartplayer.instances[0].on("timeupdate", () => {
-        console.log("current time => ", smartplayer.instances[0].video.currentTime);
-
         if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
         if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
         
