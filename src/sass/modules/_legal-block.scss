@@ -1,0 +1,20 @@
+@use '../core/breakpoints';
+@use '../core/typography';
+
+.legal-block {
+  margin-block: 60px;
+
+  @include breakpoints.mq(tabletLandscape) {
+    margin-block: 80px;
+  }
+
+  .container {
+    display: grid;
+    gap: 24px;
+  }
+}
+
+.legal-block__text {
+  @extend %body;
+  text-align: justify;
+}

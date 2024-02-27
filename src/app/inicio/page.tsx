@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "\"AntiAcne Natural\" que além de limpar, hidrata?",
 };
 
-const InicioPage = () => {
+const StartPage = () => {
   return (
     <main>
       <VslHero />
@@ -17,4 +17,4 @@ const InicioPage = () => {
   );
 }
 
-export default InicioPage;
+export default StartPage;
