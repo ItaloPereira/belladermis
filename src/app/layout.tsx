@@ -1,4 +1,5 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import Script from "next/script"
 import type { ReactNode } from "react";
 
@@ -37,6 +38,7 @@ export default function RootLayout({
       </Script>
       {/* END META PIXEL CODE */}
       <SpeedInsights />
+      <Analytics />
     </html>
   );
 }
