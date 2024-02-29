@@ -1,0 +1,23 @@
+@use '../core/breakpoints';
+@use '../core/typography';
+
+.contact-block {
+  background: var(--color-primary-light);
+  color: var(--color-primary-main);
+  padding-block: 60px;
+  text-align: center;
+
+  @include breakpoints.mq(tabletLandscape) {
+    padding-block: 60px;
+  }
+}
+
+.contact-block__container {
+  display: grid;
+  gap: 24px;
+}
+
+.contact-block__text {
+  max-width: 750px;
+  margin: 0 auto;
+}

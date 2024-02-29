@@ -4,6 +4,7 @@ import VslHero from "@/react/modules/vsl-hero";
 import DelayWrapper from "@/react/components/delay-wrapper";
 import OffertBlock from "@/react/modules/offert-block/offert-block";
 import GuaranteeBlock from "@/react/modules/guarantee-block";
+import ContactBlock from "@/react/modules/contact-block";
 import Footer from "@/react/modules/footer";
 
 export const metadata: Metadata = {
@@ -18,6 +19,7 @@ const StartPage = () => {
       <DelayWrapper>
         <OffertBlock />
         <GuaranteeBlock />
+        <ContactBlock />
       </DelayWrapper>
       {/* wpp */}
       {/* footer top */}
