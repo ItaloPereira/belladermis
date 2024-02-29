@@ -28,7 +28,7 @@ const VslHero = () => {
 
         <DelayWrapper>
           <div className="vsl-hero__button-wrapper">
-            <Button href="#" animated>
+            <Button href="#offert" animated>
               COMECE SUA JORNADA DE TRANSFORMAÇÃO
             </Button>
 

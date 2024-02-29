@@ -9,10 +9,10 @@ import "@/sass/components/_button.scss";
 interface ButtonProps {
   children: ReactNode;
   startIcon?: ReactNode;
-  href: string;
-  animated?: boolean,
+  href?: string;
+  animated?: boolean;
   color?: "success" | "inherit" | "whatsapp";
-  size?: "small" | "medium" | "large";
+  size?: "small" | "medium" | "large" | "extra-large";
   variant?: "contained" | "outlined";
 }
 
@@ -28,19 +28,36 @@ const Button = (props: ButtonProps) => {
   } = props;
 
   return (
-    <Link href={href} className={clsx(
-      [
-        "button",
-        `button--size-${size}`,
-        `button--color-${color}`,
-        `button--variant-${variant}`,
-      ], {
-      "button--animated": animated,
-    }
-    )}>
-      {startIcon && <span className="button__start-icon">{startIcon}</span>}
-      <span>{children}</span>
-    </Link>
+    href ? (
+      <Link href={href} className={clsx(
+        [
+          "button",
+          `button--size-${size}`,
+          `button--color-${color}`,
+          `button--variant-${variant}`,
+        ], {
+        "button--animated": animated,
+      }
+      )}>
+        {startIcon && <span className="button__start-icon">{startIcon}</span>}
+        <span>{children}</span>
+      </Link>
+    ) : (
+      <button className={clsx(
+        [
+          "button",
+          `button--size-${size}`,
+          `button--color-${color}`,
+          `button--variant-${variant}`,
+        ], {
+        "button--animated": animated,
+      }
+      )}>
+        {startIcon && <span className="button__start-icon">{startIcon}</span>}
+        <span>{children}</span>
+      </button>
+    )
+    
   )
 }
 

@@ -1,0 +1,68 @@
+@use '../../core/breakpoints';
+
+.offert-card {
+  font-weight: 600;
+  background: var(--color-white);
+  border-radius: 32px;
+  padding-inline: 32px;
+  padding-block: 16px 8px;
+  text-align: center;
+  display: grid;
+  gap: 24px;
+  text-decoration: none;
+  color: inherit;
+
+  @include breakpoints.mq(tabletLandscape) {
+    padding-inline: 40px;
+    padding-block: 40px 8px;
+  }
+}
+
+.offert-card__image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.offert-card__name {
+  color: var(--color-primary-main);
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 120%;
+}
+
+.offert-card__price {
+  display: grid;
+  gap: 16px;
+  
+  span {
+    display: block;
+  }
+}
+
+.offert-card__installments-label {
+  font-size: 26px;
+}
+
+.offert-card__installments-value {
+  font-size: 42px;
+}
+
+.offert-card__value {
+  color: var(--color-gray-500);
+}
+
+.offert-card__included__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  svg {
+    display: block;
+  }
+}
+
+.offert-card__included__icon {
+  color: var(--color-success-main);
+  font-size: 20px;
+}

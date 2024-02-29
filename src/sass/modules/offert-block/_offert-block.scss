@@ -1,0 +1,42 @@
+@use '../../core/breakpoints';
+@use '../../core/typography';
+
+.offert-block {
+  background: var(--color-primary-light);
+  padding-block: 60px;
+
+  @include breakpoints.mq(tabletLandscape) {
+    padding-block: 60px;
+  }
+}
+
+.offert-block__header {
+  text-align: center;
+}
+
+.offert-block__title {
+  color: var(--color-primary-main);
+  margin-bottom: 16px;
+}
+
+.offert-block__description {
+  @extend %h6;
+  margin-bottom: 16px;
+}
+
+.offert-block__warning {
+  @extend %h6;
+  color: var(--color-primary-main);
+  display: block;
+  margin-bottom: 32px;
+}
+
+.offert-block__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+
+  @include breakpoints.mq(tabletLandscape) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
