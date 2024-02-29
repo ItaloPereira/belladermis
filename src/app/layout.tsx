@@ -1,5 +1,5 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Script from 'next/script'
+import Script from "next/script"
 import type { ReactNode } from "react";
 
 import { poppins } from "@/fonts";
