@@ -1,3 +1,4 @@
+@use '../core/breakpoints';
 @use '../core/typography';
 
 .footer {
@@ -23,5 +24,46 @@
 
   a {
     margin: 0 8px;
+  }
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 48px;
+  padding-top: 48px;
+
+  @include breakpoints.mq(tabletLandscape) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+}
+
+.footer__top__payment__grid {
+  display: flex;
+  gap: 16px;
+  font-size: 40px;
+
+  svg {
+    display: block;
+  }
+}
+
+.footer__top__copyright {
+  display: grid;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer__top__copyright-text {
+  span {
+    display: block;
+    text-align: center;
+    font-weight: 600;
   }
 }
