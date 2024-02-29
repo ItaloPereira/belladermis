@@ -6,7 +6,7 @@
   padding-block: 60px;
 
   @include breakpoints.mq(tabletLandscape) {
-    padding-block: 60px;
+    padding-block: 60px 80px;
   }
 }
 
