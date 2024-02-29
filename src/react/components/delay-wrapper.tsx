@@ -13,7 +13,7 @@ const DelayWrapper = ({ children }: DelayWrapperProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const SECONDS_TO_DISPLAY = 10;
+    const SECONDS_TO_DISPLAY = 780;
     let attempts = 0;
     let elsDisplayed = false;
     const alreadyDisplayedKey = `alreadyElsDisplayed${SECONDS_TO_DISPLAY}`;
