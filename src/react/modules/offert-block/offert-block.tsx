@@ -9,32 +9,32 @@ const OffertBlock = () => {
     {
       image: "/images/packages/package12.png",
       name: "tratamento para 12 meses",
-      price12: "69,98",
-      price1: "697,00",
+      price12: "48,04",
+      price1: "467,00",
       url: "https://ev.braip.com/checkout/pla8gd9m/chekj55l",
       included: ["12 Frascos", "Garantia de 90 dias", "Frete Grátis"]
     },
     {
       image: "/images/packages/package5.png",
       name: "tratamento para 5 meses",
-      price12: "39,86",
-      price1: "397,00",
+      price12: "24,38",
+      price1: "237,00",
       url: "https://ev.braip.com/checkout/pla6z0p1/chekj55l",
       included: ["5 Frascos", "Garantia de 90 dias", "Frete Grátis"]
     },
     {
       image: "/images/packages/package3.png",
       name: "tratamento para 3 meses",
-      price12: "29,82",
-      price1: "297,00",
+      price12: "17,18",
+      price1: "167,00",
       url: "https://ev.braip.com/checkout/pla2w0v0/chekj55l",
       included: ["3 Frascos", "Garantia de 90 dias", "Frete Grátis"]
     },
     {
       image: "/images/packages/package1.png",
       name: "tratamento para 1 mês",
-      price12: "19,78",
-      price1: "197,00",
+      price12: "10,18",
+      price1: "99,00",
       url: "https://ev.braip.com/checkout/plagolmx/chekj55l",
       included: ["1 Frasco", "Garantia de 90 dias", "Frete Grátis"]
     },

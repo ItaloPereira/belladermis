@@ -28,8 +28,6 @@ const DelayWrapper = ({ children }: DelayWrapperProps) => {
     const startWatchVideoProgress = function () {
     const { smartplayer } = window;
 
-      console.log("smartplayer => ", smartplayer);
-      
       if (typeof smartplayer === "undefined" || !(smartplayer.instances && smartplayer.instances.length)) {
         if (attempts >= 10) return;
         attempts += 1;
